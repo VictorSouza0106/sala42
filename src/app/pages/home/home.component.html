@@ -1,0 +1,11 @@
+<div class="page-container">
+    <div class="title">
+        <p>Salas de Quarentena</p>
+        <p class="sub-title">Selecione uma sala</p>
+    </div>
+    <div class="card-container">
+        @for(room of roomsArr; track room.name){
+            <app-rooms-cards [room]="room"></app-rooms-cards>
+        }
+    </div>
+</div>

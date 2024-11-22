@@ -1,0 +1,10 @@
+<div class="cards" [ngClass]="room.status == 'active' ? 'active-room' : 'inative-room'">
+    <p>{{room.name}}</p>
+    <i [ngClass]="room.icon"></i>
+    <div class="action">
+        <p>Membros: {{room.members}}</p>
+        <div class="action-btns">
+            <button (click)="initRoom()" [disabled]="room.status == 'inative'">{{room.status == 'active' ? 'Iniciar' : 'Acessar'}}</button>
+        </div>
+    </div>
+</div>

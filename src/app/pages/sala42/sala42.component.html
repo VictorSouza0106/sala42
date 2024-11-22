@@ -1,0 +1,12 @@
+<app-timer #timer ></app-timer>
+<div class="page-container">
+    <div class="title">
+        <p>Membros em Quarentena - Sala 42</p>
+    </div>
+    <div class="member-card-container">
+        
+        @for(member of members; track member.name){
+            <app-members-card [member]="member" (buttonClick)="openTokenDialog(member)"></app-members-card>
+        }
+    </div>
+</div>

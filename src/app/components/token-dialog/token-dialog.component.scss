@@ -1,0 +1,25 @@
+.dialog-container {
+    padding: 25px;
+
+    .title-dialog {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        i {
+            cursor: pointer;
+            font-size: 24px;
+        }
+    }
+
+    input {
+        border: 1px solid #000000ac;
+
+        margin-bottom: 12px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}

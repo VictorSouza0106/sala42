@@ -1,0 +1,58 @@
+.pwd-container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .logo-img {
+        width: 300px;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        margin-top: -150px;
+        margin-bottom: 32px;
+    }
+
+    .login-container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        
+        padding: 32px;
+        background-color: #343641;
+        border-radius: 16px;
+        align-items: center;
+
+        .fields {
+            display: flex;
+            flex-direction: column;
+    
+
+        }
+
+        .action-btn {
+            button {
+                color: black;
+                height: 42px;
+                font-size: 18px;
+                padding: 8px 12px;
+                border: none;
+                border-radius: 12px;
+                cursor: pointer;
+                background-color: #5cadd1;
+
+                &:hover {
+                    background-color: #84bbd3;
+                }
+
+                &:active {
+                    background-color: #289bcc;
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+<div class="pwd-container">
+    <img src="../../../assets/rota66.png" class="logo-img">
+    <div class="login-container">
+        <div class="fields">
+            <input type="text" [(ngModel)]="user" placeholder="User">
+        </div>
+        <div class="fields">
+            <input type="password" [(ngModel)]="pwd" placeholder="Password">
+        </div>
+        @if(showError){
+            <p class="animation">usuario ou senha incorretos</p>
+        }
+        <div class="action-btn">
+            <button (click)="login()">Entrar</button>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css');
+@import url(reset.scss);
+
+@font-face {
+    font-family: 'corrupt';
+    src: url(assets/A_Love_of_Thunder.ttf);
+}
+
+* {
+    font-family: 'corrupt';
+}
+
+body {
+    background: url(assets/background.jpg);
+    background-size: cover;
+    font-family: 'corrupt';
+    user-select: none;
+}
+
+.page-container {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+input {
+    border: none;
+    height: 32px;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: 24px;
+}
+
+button {
+    color: black;
+    height: 24px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #5cadd1;
+    min-width: 100px;
+
+    &:hover {
+        background-color: #84bbd3;
+    }
+
+    &:active {
+        background-color: #289bcc;
+    }
+
+    &:disabled {
+        background-color: grey;
+        cursor: initial;
+    }
+
+    font-family: 'corrupt';
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 16px 42px;
+    padding-top: 60px;
+
+    font-size: 36px;
+
+    .sub-title {
+        margin-top: 12px;
+        font-size: 24px;
+    }
+}
+
+.animation {
+    animation-name: bright;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bright {
+    0% {
+    color: #fb7a7a;
+    }
+
+    50% {color: red;}
+
+    100%{color: #fb7a7a;}
+}

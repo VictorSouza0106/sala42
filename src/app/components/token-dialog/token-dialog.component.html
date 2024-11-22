@@ -1,0 +1,20 @@
+<div class="dialog-container">
+  <div class="title-dialog">
+    <label for="">Insira um Token de acesso</label>
+    <i (click)="closeModal()" class="mdi mdi-close"></i>
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="inputToken">
+  </div>
+  <div style="display: flex;justify-content: center;margin: 12px 0;">
+    @if(showError){
+      <p class="animation">Token incorreto</p>
+    }
+    @if(showAlreadyUsedAlert){
+      <p class="animation">Este token ja foi utilizado</p>
+    }
+  </div>
+  <div style="display: flex;justify-content: center;">
+    <button (click)="checkToken()">Enviar</button>
+  </div>
+</div>

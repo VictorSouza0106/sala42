@@ -1,0 +1,64 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    width: 270px;
+    height: 270px;
+    padding: 24px;
+
+    background-color: white;
+    border-radius: 16px;
+    
+
+    i {
+        font-size: 48px;
+    }
+
+    .labels {
+        margin-top: auto;
+    }
+
+    .action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        button {
+            color: black;
+            height: 24px;
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #5cadd1;
+            min-width: 100px;
+
+            &:hover {
+                background-color: #84bbd3;
+            }
+
+            &:active {
+                background-color: #289bcc;
+            }
+
+            &:disabled {
+                background-color: grey;
+                cursor: initial;
+            }
+
+            font-family: 'corrupt';
+        }
+    }
+}
+
+.active-room {
+    border: 3px solid #33ff006c;
+}
+
+.inative-room {
+    border: 3px solid #ff00006c;
+}

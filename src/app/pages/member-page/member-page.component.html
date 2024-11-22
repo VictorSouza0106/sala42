@@ -1,0 +1,17 @@
+<div class="page-container">
+    <div class="title">
+        <p>Ficha de Dados</p>
+        <p class="sub-title">{{member.descName}}</p>
+        <img [src]="'../../../assets/chars/' + member.img">
+    </div>
+    <p style="text-align: center;font-size: 24px;">Resumo</p>
+    <div class="text-hist">
+        {{member.hist}}
+    </div>
+    <div style="font-size: 24px;text-align: center;">
+        <span style="font-size: 26px;">Motivo da Captura:. </span>{{member.reason}}
+    </div>
+    <div style="display: flex;justify-content: center;margin-top: 36px;">
+        <button (click)="backToMembers()">Voltar</button>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<div class="cards">
+    <p style="font-size: 24px;">{{member.name}}</p>
+    <img [src]="'../../../assets/chars/' + member.img" alt="">
+    <button (click)="buttonClick.emit()">{{member.status ? 'Acessar Ficha' : 'Desbloquar Ficha'}}</button>
+</div>
