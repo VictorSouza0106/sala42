@@ -23,7 +23,7 @@ export class PwdpageComponent {
   ){}
 
   login(){
-    if(this.user != 'pwd' || this.pwd != '123456') {
+    if(this.user != 'pwd' || this.pwd != '544288') {
       this.showError = true;
       
       let interval = setTimeout(() => {
