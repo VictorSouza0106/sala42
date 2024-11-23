@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
 
   settingConfigs(){
     if(!localStorage.getItem('availableTokens')){
-      localStorage.setItem('availableTokens',['hotegg', 'xbysun', 'secret','colors','TFFTTT','notred','routes'].toString());
+      localStorage.setItem('availableTokens',['hotegg', 'xbysun', 'secret','colors','tffttt','notred','routes'].toString());
       localStorage.setItem('alreadyUsedTokens',[].toString());
       
     }
